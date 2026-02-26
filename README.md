@@ -100,3 +100,4 @@ ecommerce-analytics-sql/
 └── outputs/
     ├── screenshots/
     └── sample_results.csv
+
