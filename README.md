@@ -104,7 +104,6 @@ ecommerce-analytics-sql/
 ### ✅ Query 01 — Monthly visits, pageviews, transactions (Jan–Mar 2017)
 **Result / Query Screenshot:**
 
-<img width="607" height="350" alt="Queries-01" src="https://github.com/user-attachments/assets/d4747b7f-8e3a-4d02-871c-8a40de373086" />
 
 
 
