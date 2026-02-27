@@ -520,6 +520,43 @@ ORDER BY week;
 ### 📊Chart_Result (Screenshot)
 ![Results ](Chart_Results_10.png)
 
+## 📌 Insights & Key Takeaways
+
+### 🔍 Key Insights (from results)
+
+- **Bounce rate by traffic source (Jul 2017 — Query 02):**
+  - **google** drove the most visits (**38,400**) with a bounce rate of **51.56%**.
+  - **(direct)** had **19,891** visits and a lower bounce rate (**43.27%**) than google.
+  - Some sources show noticeably higher bounce rates, e.g. **youtube.com: 66.73%**, **m.facebook.com: 64.28%**, suggesting lower-quality landing traffic compared to direct.  
+
+- **Conversion rate by traffic source (2017 — Query 04):**
+  - **dfa** had the highest conversion rate (**3.0%**) with **2,728** visits and **72** transactions.
+  - **(direct)** converted at **2.0%** with **189,447** visits and **4,697** transactions.
+  - **google** converted at **1.0%** with **179,804** visits and **1,661** transactions.
+  - This shows a clear **volume vs efficiency trade-off**: some sources convert better even with lower traffic.
+
+- **Revenue contribution by device (Query 07):**
+  - **Desktop** dominates revenue contribution at **96.14%** (≈ **1,674,745.74** out of total **1,742,046.97**).
+  - **Mobile** contributes **3.25%** (≈ **56,553.10**), while **Tablet** contributes **0.62%** (≈ **10,748.13**).
+  - Revenue is heavily **desktop-driven**, so desktop experience is a major lever for revenue performance.
+
+- **Cross-sell / also-bought products (Query 08):**
+  - Among customers who purchased **"YouTube Men's Vintage Henley"** (Jul 2017), the top also-purchased products by quantity include:
+    - **Google Sunglasses (20)**
+    - **SPF-15 Slim & Slender Lip Balm (7)**
+    - **YouTube Men's Fleece Hoodie Black (6)**
+    - **Google Men's Short Sleeve Hero Tee Black (4)**
+  - This is a strong signal for **bundling / recommendation** opportunities.
+
+---
+
+### ✅ Key Takeaways
+
+- **Don’t evaluate channels using visits alone.** Pair traffic volume with quality metrics like **bounce rate**, **conversion rate**, and **revenue**.
+- **High conversion ≠ high traffic.** Sources like **dfa** can be extremely efficient even with fewer visits—use this for smarter budget allocation.
+- **Device strategy matters.** With **desktop generating 96%+ of revenue**, optimizing desktop checkout/product pages can have the highest ROI.
+- **Use “also-bought” to drive growth.** Cross-sell insights can improve AOV via bundles and targeted recommendations.
+
 
 
 
