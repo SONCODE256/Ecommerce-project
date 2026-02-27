@@ -474,3 +474,50 @@ ORDER BY month;
 ```
 ### 📊Result (Screenshot)
 ![Results ](Results-09.png)
+
+## ✅ Query 10 — Weekly revenue + cumulative revenue (May–Jul 2017)
+
+**Objective:** Calculate **revenue by week** from **May to July 2017** and compute **cumulative revenue** over time.
+
+- **Time range:** 2017-05-01 → 2017-07-31  
+- **Filter for correct purchases:** `productRevenue IS NOT NULL`  
+- **Revenue conversion:** `productRevenue` is stored in micros → divide by `1e6`  
+- **Cumulative logic:** Window function `SUM(...) OVER (ORDER BY week)`  
+- **Output columns:** `week`, `weekly_revenue`, `cumulative_revenue`
+- 
+### 🧾 SQL
+```sql
+
+WITH base AS (
+  SELECT
+    PARSE_DATE('%Y%m%d', date) AS d,
+    p.productRevenue AS product_revenue
+  FROM `bigquery-public-data.google_analytics_sample.ga_sessions_*`,
+  UNNEST(hits) AS h,
+  UNNEST(h.product) AS p
+  WHERE _TABLE_SUFFIX BETWEEN '20170501' AND '20170731'
+    AND p.productRevenue IS NOT NULL
+),
+
+weekly AS (
+  SELECT
+    FORMAT_DATE('%G-%V', d) AS week,     -- ISO year-week (e.g., 2017-18)
+    SUM(product_revenue) / 1e6 AS weekly_revenue
+  FROM base
+  GROUP BY week
+)
+
+SELECT
+  week,
+  weekly_revenue,
+  ROUND(SUM(weekly_revenue) OVER (ORDER BY week), 2) AS cumulative_revenue
+FROM weekly
+ORDER BY week;
+```
+### 📊Result (Screenshot)
+![Results ](Results-10.png)
+
+### 📊Chart_Result (Screenshot)
+![Results ](Chart_Results_10.png)
+
+
