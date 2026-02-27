@@ -521,3 +521,7 @@ ORDER BY week;
 ![Results ](Chart_Results_10.png)
 
 
+# 🧑‍💼 Son T Nguyen
+
+Data Analyst | SQL | Power BI | Excel | Python | Data Visualization
+
