@@ -318,7 +318,6 @@ ORDER BY month;
 ```
 ### 📊 Result (Screenshot)
 ![Results ](Results-06.png)
-
 ## ✅ Query 07 — Revenue contribution by device (desktop, mobile, tablet)
 
 **Objective:** Calculate **revenue contribution** by **device category** and rank by contribution ratio (DESC).
